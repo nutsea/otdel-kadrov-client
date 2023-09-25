@@ -1,0 +1,57 @@
+.None {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.App {
+    background-color: white;
+}
+
+.Header {
+    position: fixed;
+    width: calc(100% - 80px);
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+
+    .HomeBtn {
+        font-weight: 600;
+        transition: opacity 0.2s linear, transform 0.2s linear;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    .TestBtn {
+        margin-left: 15px;
+        background-color: white;
+        padding: 10px 20px;
+        color: rgb(50, 50, 50);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: opacity 0.2s linear, transform 0.2s linear;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}
